@@ -1,0 +1,41 @@
+# Tarea2
+#Universidad Autónoma del Estado de México
+#Fac. Economía #Lic. Actuaría
+#Análsis de regresión
+##TAREA2
+#Mónica Gutiérrez Vieyra
+
+###################### ejercicio matrices########
+#*1) crear una matriz con la funciÃ³n dim() de 4 columnas 
+#y 5 renglones, ##esta matriz esta basada en un vector que contiene
+#esto datos 11:31 
+## El nombre de los renglones es el siguiente (toluca,pachuca, gdl, mty)
+## El nombre de las columnas es (escuela1, escuela2, escuela3, #escuela4, escuela5)
+## Incorporar el nombre a los renglones y columnas de la matriz
+## Identificar el dato de la escuela 3 de toluca, de la escuela 5 de gdl y la escuela 1 de pachuca
+
+m1<-(1:20)
+m1
+View(m1)
+dim(m1)<-c(5,4)
+View(m1)
+
+f<- matrix(11:31,nrow = 5,ncol = 4,byrow = T) #byrow es para ordenar por filas
+f
+
+rownames(f)<-c("E1","E2","E3","E4","E5")
+colnames(f)<-c("Toluca","Pachuca","Guadalajara","Monterrey")
+
+f["E3","Toluca"]
+View(f)
+
+f["E5","Guadalajara"]
+f["E1","Pachuca"]
+
+# *2) crear con la funciÃ³n matrix una matriz de 6 renglones y 3 columnas.... 
+#y preguntar por el dato de la matriz en el renglon 3 y columna 3
+
+
+g<- matrix(1:18,nrow = 6,ncol = 3,byrow = T)
+g
+g[3,3]
